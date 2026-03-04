@@ -4,6 +4,13 @@
 // Working with Strings PART-1
 //-----------------------------
 /*
+
+Covered here:
+1) indexOf
+2) lastIndexOf
+3) slice
+
+
 We know that Strings have primitives. So, why they have Methods?
 Here's why: Whenever we call a method on a s Trsing, JavaScript auto-converts the
 String Primitive to a String Object with the same content. And this allows us to use Methods
@@ -71,8 +78,7 @@ console.log(airline.slice(4)); // Air Portugal
 
 //----------------------------------------
 // We can also specify the end parameter (Note that the result does not include the
-// index value of the 2nd param, so, in the below example, P is having the 8th index, when
-// we specify the end param as 9)
+// index value of the 2nd param, so, in the below example, P is having the 8th index, when we specify the end param as 9)
 //--------------------------------------
 console.log(airline.slice(4, 9)); // Air P
 console.log(airline.slice(4, 9).length); // 5; that's 9-4
