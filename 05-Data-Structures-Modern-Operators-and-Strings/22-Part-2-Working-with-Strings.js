@@ -11,7 +11,7 @@ Covered here (Total 10 + Bonus: REGEX):
 4) trimStart() ---> ES2019, 
 5) trimEnd() ----> ES2019
 6) replace()
-7) replaceAll()
+7) replaceAll() ---> ES2021
 
 Bonus: Using REGEX (with replace()) instead of replaceAll()
 

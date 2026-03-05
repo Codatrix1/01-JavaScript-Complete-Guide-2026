@@ -22,5 +22,5 @@ const interface = "Audio";
 const private = 123;
 // Uncaught SyntaxError: Unexpected strict mode reserved word (at script.js:22:7)
 
-const if = "Hello there"; 
+// const if = "Hello there";
 // 'if' is not allowed as a variable declaration name
