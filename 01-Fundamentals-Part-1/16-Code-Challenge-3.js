@@ -22,47 +22,43 @@ Test data:
 § Data Bonus 2: Dolphins score 97, 112 and 101. Koalas score 109, 95 and 106
 */
 
-//--------------
-// Test Data
-//-----------
-// const avgDolphins = (96 + 108 + 89) / 3;
-// const avgKoalas = (88 + 91 + 110) / 3;
+// const avgDolphins = ((96 + 108 + 89) / 3).toFixed(2);
+// const avgKoalas = ((88 + 91 + 110) / 3).toFixed(2);
 
-//---------------
-// BONUS 1 Data
-//---------------
-// const avgDolphins = (97 + 112 + 101) / 3;
-// const avgKoalas = (109 + 95 + 123) / 3;
+// BONUS 1: Data
+// const avgDolphins = ((97 + 112 + 101) / 3).toFixed(2);
+// const avgKoalas = ((109 + 95 + 123) / 3).toFixed(2);
 
-//--------------
-// BONUS 2 Data
-//---------------
-const avgDolphins = (97 + 112 + 101) / 3;
-const avgKoalas = (109 + 95 + 106) / 3;
+// BONUS 2: Data
+const avgDolphins = ((97 + 112 + 101) / 3).toFixed(2);
+const avgKoalas = ((109 + 95 + 106) / 3).toFixed(2);
 
-//-------------
-// SOLUTION
-//------------
-console.log(avgDolphins.toFixed(2), avgKoalas.toFixed(2));
+console.log(avgDolphins, avgKoalas);
 
 if (avgDolphins > avgKoalas) {
-  console.log(`Dolphins wins ${avgDolphins.toFixed(2)} `);
+  console.log(`Dolphins Win! ${avgDolphins} `);
 } else if (avgDolphins < avgKoalas) {
-  console.log(`Koalas wins ${avgKoalas.toFixed(2)} `);
+  console.log(`Koalas Win! ${avgKoalas} `);
 } else if (avgDolphins === avgKoalas) {
-  console.log("It's a draw");
+  console.log(`Oop! Its a tie. No One Wins `);
 }
 
 if (avgDolphins > avgKoalas && avgDolphins >= 100) {
-  console.log(
-    `Dolphins are the winners with the score ${avgDolphins.toFixed(2)}`
-  );
-} else if (avgKoalas > avgDolphins && avgKoalas >= 100) {
-  console.log(`Koalas are the winners with the score ${avgKoalas.toFixed(2)}`);
+  console.log(`Dolphins Win! ${avgDolphins} `);
+} else if (avgDolphins < avgKoalas && avgKoalas >= 100) {
+  console.log(`Koalas Win! ${avgKoalas} `);
+} else {
+  console.log("No One Wins!");
+}
+
+if (avgDolphins > avgKoalas && avgDolphins >= 100) {
+  console.log(`Dolphins Win! ${avgDolphins} `);
+} else if (avgDolphins < avgKoalas && avgKoalas >= 100) {
+  console.log(`Koalas Win! ${avgKoalas} `);
 } else if (
-  avgDolphins === avgDolphins &&
+  avgDolphins === avgKoalas &&
   avgDolphins >= 100 &&
   avgKoalas >= 100
 ) {
-  console.log("No one wins the trophy! 😢");
+  console.log("Oops! No One Wins 🤔");
 }
